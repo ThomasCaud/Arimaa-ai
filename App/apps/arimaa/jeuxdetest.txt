@@ -1,0 +1,14 @@
+?- get_moves(Moves, _, [[5,0,rabbit,silver]]).
+Moves = [[[5, 0], [6, 0]], [6, 0], [7, 0]].
+
+?- get_moves(Moves, _, [[5,0,rabbit,silver],[0,1,rabbit,silver],[0,2,horse,silver],[0,3,rabbit,silver],[0,4,elephant,silver],[0,5,rabbit,silver],[0,6,rabbit,silver],[0,7,rabbit,silver],[1,0,camel,silver],[1,1,cat,silver],[1,2,rabbit,silver],[1,3,dog,silver],[1,4,rabbit,silver],[1,5,horse,silver],[1,6,dog,silver],[1,7,cat,silver]]).
+Moves = [[[5, 0], [6, 0]], [6, 0], [7, 0]].
+
+?- get_moves(Moves, _, [[5,0,rabbit,silver],[6,0,elephant,gold], [4,5,rabbit,silver],[0,2,horse,silver],[0,3,rabbit,silver],[0,4,elephant,silver],[0,5,rabbit,silver],[0,6,rabbit,silver],[0,7,rabbit,silver],[1,0,camel,silver],[1,1,cat,silver],[1,2,rabbit,silver],[1,3,dog,silver],[1,4,rabbit,silver],[1,5,horse,silver],[1,6,dog,silver],[1,7,cat,silver]]).
+Moves = [[[5, 0], [5, 1]], [[5, 1], [6, 1]], [6, 1], [7, 1]].
+
+?- get_moves(Moves,_,[[5,0,rabbit,silver],[6,0,elephant,gold], [6,1,elephant,gold], [4,5,rabbit,silver],[0,2,horse,silver],[0,3,rabbit,silver],[0,4,elephant,silver],[0,5,rabbit,silver],[0,6,rabbit,silver],[0,7,rabbit,silver],[1,0,camel,silver],[1,1,cat,silver],[1,2,rabbit,silver],[1,3,dog,silver],[1,4,rabbit,silver],[1,5,horse,silver],[1,6,dog,silver],[1,7,cat,silver]]).
+Moves = [[[5, 0], [5, 1]], [[5, 1], [5, 2]], [[5, 2], [6, 2]], [6, 2], [7, 2]].
+
+?- get_moves(Moves,_,[[5,0,rabbit,silver],[6,0,elephant,gold], [6,1,elephant,gold],[6,2,elephant,gold], [4,5,rabbit,silver],[0,2,horse,silver],[0,3,rabbit,silver],[0,4,elephant,silver],[0,5,rabbit,silver],[0,6,rabbit,silver],[0,7,rabbit,silver],[1,0,camel,silver],[1,1,cat,silver],[1,2,rabbit,silver],[1,3,dog,silver],[1,4,rabbit,silver],[1,5,horse,silver],[1,6,dog,silver],[1,7,cat,silver]]).
+Moves = [[[4, 5], [5, 5]], [[5, 5], [6, 5]], [6, 5], [7, 5]].
